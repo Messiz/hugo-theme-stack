@@ -6,5 +6,4 @@
     {{ if .Params.musicid }}
     {{ partial "article/components/music" . }}
     {{ end }}
-    {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
 </section>
